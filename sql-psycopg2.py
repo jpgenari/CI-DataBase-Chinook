@@ -27,10 +27,10 @@ cursor = connection.cursor()
 # cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["Queen"]) # psql = SELECT * FROM "Track" WHERE "Composer" = 'Queen';
 
 # Query 7 (challenge)
-# cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["AC/DC"]) # psql = SELECT * FROM "Track" WHERE "Composer" = 'AC/DC';
+cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["AC/DC"]) # psql = SELECT * FROM "Track" WHERE "Composer" = 'AC/DC';
 
 # Query 8 (challenge)
-cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["test"]) # psql = SELECT * FROM "Track" WHERE "Composer" = 'test';
+# cursor.execute('SELECT * FROM "Track" WHERE "Composer" = %s', ["test"]) # psql = SELECT * FROM "Track" WHERE "Composer" = 'test';
 
 # fetch the results (multiple)
 results = cursor.fetchall()
